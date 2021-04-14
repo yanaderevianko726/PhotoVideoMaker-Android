@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    n1:background="@drawable/bg_12"
+    n1:orientation="vertical">
+
+    <LinearLayout
+        n1:layout_width="match_parent"
+        n1:layout_height="match_parent"
+        n1:gravity="center">
+
+        <ImageView
+            n1:layout_width="match_parent"
+            n1:layout_height="match_parent"
+            n1:src="@drawable/bg_12"
+            n1:scaleType="centerCrop" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        n1:layout_width="match_parent"
+        n1:layout_height="match_parent"
+        n1:orientation="vertical">
+
+        <LinearLayout
+            n1:layout_width="match_parent"
+            n1:layout_height="0dp"
+            n1:layout_weight="1" />
+
+        <LinearLayout
+            n1:layout_above="@+id/fad"
+            n1:layout_marginStart="20dp"
+            n1:layout_marginEnd="20dp"
+            n1:layout_width="match_parent"
+            n1:layout_height="wrap_content"
+            n1:orientation="horizontal">
+
+            <RelativeLayout
+                n1:layout_width="0dp"
+                n1:layout_height="90dp"
+                n1:layout_weight="1">
+
+                <LinearLayout
+                    n1:layout_width="match_parent"
+                    n1:layout_height="match_parent"
+                    n1:gravity="center">
+
+                    <ImageView
+                        n1:id="@+id/start"
+                        n1:layout_width="0dp"
+                        n1:layout_height="90dp"
+                        n1:layout_weight="1"
+                        n1:layout_gravity="center"
+                        n1:src="@drawable/start" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    n1:layout_width="match_parent"
+                    n1:layout_height="match_parent"
+                    n1:gravity="center">
+
+                    <TextView
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content"
+                        n1:textColor="@color/white"
+                        n1:textStyle="bold"
+                        n1:textSize="18dp"
+                        n1:text="@string/video_marker"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                n1:layout_width="24dp"
+                n1:layout_height="2dp" />
+
+            <RelativeLayout
+                n1:layout_width="0dp"
+                n1:layout_height="90dp"
+                n1:layout_weight="1">
+
+                <LinearLayout
+                    n1:layout_width="match_parent"
+                    n1:layout_height="match_parent"
+                    n1:gravity="center">
+
+                    <ImageView
+                        n1:id="@+id/myalbum"
+                        n1:layout_width="0dp"
+                        n1:layout_height="90.0dip"
+                        n1:layout_weight="1"
+                        n1:layout_gravity="center"
+                        n1:src="@drawable/myalbum" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    n1:layout_width="match_parent"
+                    n1:layout_height="match_parent"
+                    n1:gravity="center">
+
+                    <TextView
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content"
+                        n1:textColor="@color/white"
+                        n1:textStyle="bold"
+                        n1:textSize="18dp"
+                        n1:text="@string/my_creation"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            n1:id="@+id/fad"
+            n1:layout_width="match_parent"
+            n1:layout_height="wrap_content"
+            n1:layout_marginTop="38dp"
+            n1:layout_gravity="center"
+            n1:layout_marginBottom="10dp"
+            n1:gravity="center"
+            n1:orientation="horizontal"
+            n1:layout_marginStart="30dp"
+            n1:layout_marginEnd="30dp">
+
+            <ImageView
+                n1:padding="10dp"
+                n1:layout_weight="1"
+                n1:id="@+id/iv_share"
+                n1:layout_width="60dp"
+                n1:layout_height="60dp"
+                n1:layout_gravity="center"
+                n1:adjustViewBounds="true"
+                n1:src="@drawable/btn_share" />
+            <ImageView
+                n1:id="@+id/iv_reta"
+                n1:padding="10dp"
+                n1:layout_weight="1"
+                n1:layout_width="60dp"
+                n1:layout_height="60dp"
+                n1:layout_gravity="center"
+                n1:adjustViewBounds="true"
+                n1:src="@drawable/btn_rate" />
+            <ImageView
+                n1:layout_weight="1"
+                n1:padding="10dp"
+                n1:id="@+id/iv_privecy"
+                n1:layout_width="60dp"
+                n1:layout_height="60dp"
+                n1:layout_gravity="center"
+                n1:adjustViewBounds="true"
+                n1:visibility="gone"
+                n1:src="@drawable/btn_privacy" />
+
+
+        </LinearLayout>
+
+        <com.google.android.gms.ads.AdView
+            n1:id="@+id/adView"
+            n1:layout_width="match_parent"
+            n1:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/admob_banner"
+            >
+        </com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
+
+</RelativeLayout>

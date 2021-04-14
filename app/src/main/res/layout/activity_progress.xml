@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="match_parent"
+    n1:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    n1:layout_gravity="center"
+    n1:background="@drawable/b_2"
+    n1:gravity="center"
+    n1:orientation="vertical">
+
+    <com.producevideos.crearvideosconfotosymusicaytextoeditor.view.CircularFillableLoaders xmlns:n2="http://schemas.android.com/apk/res-auto"
+        n1:id="@+id/circularProgress"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_margin="30.0dip"
+        n1:src="@mipmap/ic_launcher"
+        n1:visibility="gone"
+        n2:cfl_border="true"
+        n2:cfl_progress="50"
+        n2:cfl_wave_color="#fff44336" />
+
+    <ImageView
+        n1:id="@+id/ivLoading"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:visibility="gone" />
+
+    <com.producevideos.crearvideosconfotosymusicaytextoeditor.view.FreshDownloadView xmlns:n3="http://schemas.android.com/apk/res-auto"
+        n1:id="@+id/freshDownloadView1"
+        n1:layout_width="wrap_content"
+        n1:layout_height="wrap_content"
+        n1:layout_alignParentTop="true"
+        n1:layout_centerHorizontal="true"
+        n1:layout_centerInParent="true"
+        n1:layout_marginBottom="20.0dip"
+        n3:circular_color="@android:color/white"
+        n3:circular_progress_color="@color/red"
+        n3:circular_radius="100.0dip"
+        n3:circular_width="10.0dip"
+        n3:progress_text_size="42.0sp" />
+
+    <TextView
+        n1:id="@+id/tvMsg"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_below="@+id/freshDownloadView1"
+        n1:layout_marginLeft="20.0dip"
+        n1:layout_marginRight="20.0dip"
+        n1:layout_marginTop="20.0dip"
+        n1:background="@drawable/boarder"
+        n1:fontFamily="sans-serif-smallcaps"
+        n1:gravity="center"
+        n1:text="@string/video_craetion_msg"
+        n1:textColor="@color/white"
+        n1:textSize="20.0sp" />
+
+    <TextView
+        n1:id="@+id/tv_click_here"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_above="@+id/adViewN"
+        n1:layout_below="@+id/freshDownloadView1"
+        n1:background="@drawable/boarder"
+        n1:fontFamily="sans-serif-smallcaps"
+        n1:gravity="center_horizontal"
+        n1:padding="5.0dip"
+        n1:text="@string/click_here_to_visit_my_album"
+        n1:textColor="@color/white"
+        n1:textSize="20.0sp"
+        n1:visibility="gone" />
+
+    <LinearLayout
+        n1:layout_width="match_parent"
+        n1:layout_height="0dp"
+        n1:layout_weight="1" />
+
+    <com.google.android.gms.ads.AdView
+        n1:id="@+id/adView"
+        n1:layout_width="match_parent"
+        n1:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/admob_banner">
+    </com.google.android.gms.ads.AdView>
+</LinearLayout>

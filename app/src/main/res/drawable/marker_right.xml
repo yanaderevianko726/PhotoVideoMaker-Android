@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+    <item
+        xmlns:n1="http://schemas.android.com/apk/res/android"
+        n1:state_pressed="true" n1:drawable="@drawable/marker_right_pressed"
+       />
+    <item
+
+        xmlns:n2="http://schemas.android.com/apk/res/android"
+        n2:state_focused="true" n2:state_pressed="false" n2:drawable="@drawable/marker_right_focused"
+       />
+    <item
+        xmlns:n3="http://schemas.android.com/apk/res/android"
+        n3:drawable="@drawable/marker_right_normal"
+       />
+</selector>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:fromDegrees="45.0"
+    n1:padding="30.0dip"
+    n1:shape="rectangle"
+    n1:toDegrees="45.0">
+    <solid n1:color="#ff000000" />
+    <corners
+        n1:bottomLeftRadius="50.0dip"
+        n1:bottomRightRadius="0.0dip"
+        n1:radius="2.0dip"
+        n1:topLeftRadius="50.0dip"
+        n1:topRightRadius="50.0dip" />
+</shape>

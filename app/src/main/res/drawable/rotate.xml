@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:drawable="@drawable/roundrect"
+    n1:drawablePadding="20.0dip"
+    n1:fromDegrees="45.0"
+    n1:toDegrees="45.0"
+    n1:visible="true" />

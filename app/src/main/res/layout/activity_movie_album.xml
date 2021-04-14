@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    n1:fitsSystemWindows="true">
+
+    <androidx.appcompat.widget.Toolbar xmlns:n2="http://schemas.android.com/apk/res-auto"
+        n1:id="@+id/toolbar"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:background="@drawable/maingadient"
+        n1:minHeight="?actionBarSize"
+        n1:paddingRight="10.0dip"
+        n2:navigationIcon="@drawable/ic_left"
+        n2:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        n2:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            n1:id="@+id/toolbar_title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_gravity="left"
+            n1:text="@string/arrange_images"
+            n1:textColor="@color/header_font_color"
+            n1:textSize="@dimen/header_font_size" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.producevideos.crearvideosconfotosymusicaytextoeditor.view.EmptyRecyclerView
+        n1:id="@+id/rvVideoAlbum"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_below="@+id/toolbar" />
+
+    <LinearLayout
+        n1:id="@+id/list_empty"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_below="@+id/toolbar"
+        n1:gravity="center"
+        n1:orientation="vertical">
+
+        <TextView
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:drawableTop="@drawable/no_video"
+            n1:gravity="center_horizontal"
+            n1:text="@string/album_not_created_yet"
+            n1:textColor="#ff999999" />
+    </LinearLayout>
+
+    <ImageView
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_below="@+id/toolbar"
+        n1:background="@drawable/stack_drop_shadow"
+        n1:minHeight="6.0dip" />
+
+    <com.google.android.gms.ads.AdView
+        n1:id="@+id/adView"
+        n1:layout_width="match_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/admob_banner"
+        >
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

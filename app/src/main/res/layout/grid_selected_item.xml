@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.producevideos.crearvideosconfotosymusicaytextoeditor.view.ScaleCardLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    xmlns:n2="http://schemas.android.com/apk/res-auto"
+    n1:id="@+id/rlMainContainer"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    n1:layout_marginBottom="2.0dip"
+    n1:layout_marginLeft="4.0dip"
+    n1:layout_marginRight="4.0dip"
+    n1:layout_marginTop="4.0dip"
+    n1:background="@drawable/quantum_panel_dark_bitmap"
+    n2:aspectRatioHeight="1"
+    n2:aspectRatioWidth="1"
+    n2:cardCornerRadius="2.0dip"
+    n2:cardElevation="4.0dip">
+
+    <ImageView
+        n1:id="@+id/ivThumb"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:background="@drawable/bg_card_transparent"
+        n1:clickable="true"
+        n1:scaleType="centerCrop" />
+
+    <View
+        n1:id="@+id/clickableView"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:background="@drawable/bg_card_transparent"
+        n1:clickable="true" />
+
+    <ImageView
+        n1:id="@+id/ivRemove"
+        n1:layout_width="26.0dip"
+        n1:layout_height="26.0dip"
+        n1:layout_alignParentEnd="true"
+        n1:layout_alignParentRight="true"
+        n1:layout_alignParentTop="true"
+        n1:layout_marginEnd="2.0dip"
+        n1:layout_marginRight="2.0dip"
+        n1:layout_marginTop="2.0dip"
+        n1:src="@drawable/delete_" />
+
+
+    <TextView
+        n1:id="@+id/textNumber"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:gravity="center"
+        n1:text=""
+        n1:textColor="@android:color/white"
+        n1:textSize="18.0sp" />
+</com.producevideos.crearvideosconfotosymusicaytextoeditor.view.ScaleCardLayout>

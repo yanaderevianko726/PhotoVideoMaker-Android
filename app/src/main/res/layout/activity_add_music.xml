@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    n1:id="@+id/mainLayout"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    n1:background="@color/purvis_grey"
+    n1:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar xmlns:n2="http://schemas.android.com/apk/res-auto"
+        n1:id="@+id/toolbar"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:background="@drawable/maingadient"
+        n1:minHeight="?actionBarSize"
+        n1:paddingRight="10.0dip"
+        n2:navigationIcon="@drawable/ic_left"
+        n2:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        n2:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            n1:id="@+id/toolbar_title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_gravity="left"
+            n1:text="@string/select_music"
+            n1:textColor="@color/header_font_color"
+            n1:textSize="@dimen/header_font_size" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:background="@drawable/stack_drop_shadow"
+        n1:minHeight="6.0dip" />
+
+    <AbsoluteLayout
+        n1:id="@+id/waveformParent"
+        n1:layout_width="fill_parent"
+        n1:layout_height="140.0dip">
+
+        <ImageView
+            n1:id="@+id/bkgnd"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:scaleType="centerCrop" />
+
+        <com.producevideos.crearvideosconfotosymusicaytextoeditor.view.WaveformView
+            n1:id="@+id/waveform"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent" />
+
+        <com.producevideos.crearvideosconfotosymusicaytextoeditor.view.MarkerView
+            n1:id="@+id/startmarker"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:contentDescription="@string/start_marker"
+            n1:nextFocusDown="@+id/endmarker"
+            n1:src="@drawable/marker_left" />
+
+        <com.producevideos.crearvideosconfotosymusicaytextoeditor.view.MarkerView
+            n1:id="@+id/endmarker"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:contentDescription="@string/end_marker"
+            n1:nextFocusDown="@+id/info"
+            n1:nextFocusUp="@+id/startmarker"
+            n1:src="@drawable/marker_right" />
+    </AbsoluteLayout>
+
+    <ImageView
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_alignBottom="@+id/waveformParent"
+        n1:background="@drawable/stack_drop_shadow_bottom_top"
+        n1:minHeight="6.0dip" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        n1:id="@+id/rvMusicList"
+        n1:layout_width="fill_parent"
+        n1:layout_height="0.0dip"
+        n1:layout_weight="1.0" />
+
+    <ImageView
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:background="@drawable/stack_drop_shadow_bottom_top"
+        n1:minHeight="6.0dip" />
+
+    <LinearLayout
+        n1:id="@+id/llButton"
+        n1:layout_width="fill_parent"
+        n1:layout_height="?actionBarSize"
+        n1:layout_alignParentBottom="true"
+        n1:background="@drawable/maingadient"
+        n1:gravity="center">
+
+        <EditText
+            n1:id="@+id/starttext"
+            n1:layout_width="60.0dip"
+            n1:layout_height="fill_parent"
+            n1:contentDescription="@string/start_label"
+            n1:gravity="center"
+            n1:hint="Start"
+            n1:textColor="@android:color/white"
+
+            n1:textSize="12.0sp" />
+
+        <ImageButton
+            n1:id="@+id/rew"
+            style="@android:style/MediaButton"
+            n1:layout_width="64.0dip"
+            n1:layout_height="52.0dip"
+            n1:layout_marginBottom="6.0dip"
+            n1:layout_marginTop="6.0dip"
+            n1:background="@drawable/bg_card_transparent"
+            n1:clickable="true"
+            n1:contentDescription="@string/rewind"
+            n1:src="@android:drawable/ic_media_previous" />
+
+        <ImageButton
+            n1:id="@+id/play"
+            style="@android:style/MediaButton"
+            n1:layout_width="71.0dip"
+            n1:layout_height="52.0dip"
+            n1:layout_marginBottom="6.0dip"
+            n1:layout_marginTop="6.0dip"
+            n1:background="@drawable/bg_card_transparent"
+            n1:clickable="true"
+            n1:contentDescription="@string/play"
+            n1:src="@android:drawable/ic_media_play" />
+
+        <ImageButton
+            n1:id="@+id/ffwd"
+            style="@android:style/MediaButton"
+            n1:layout_width="64.0dip"
+            n1:layout_height="52.0dip"
+            n1:layout_marginBottom="6.0dip"
+            n1:layout_marginRight="5.0dip"
+            n1:layout_marginTop="6.0dip"
+            n1:background="@drawable/bg_card_transparent"
+            n1:clickable="true"
+            n1:contentDescription="@string/ffwd"
+            n1:src="@android:drawable/ic_media_next" />
+
+        <EditText
+            n1:id="@+id/endtext"
+            n1:layout_width="60.0dip"
+            n1:layout_height="fill_parent"
+            n1:contentDescription="@string/end_label"
+            n1:gravity="center"
+            n1:hint="End"
+            n1:textColor="@android:color/white"
+
+            n1:textSize="12.0sp" />
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        n1:id="@+id/adView"
+        n1:layout_width="match_parent"
+        n1:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/admob_banner">
+    </com.google.android.gms.ads.AdView>
+
+</LinearLayout>

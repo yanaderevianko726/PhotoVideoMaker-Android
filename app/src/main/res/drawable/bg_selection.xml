@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector n1:color="@android:color/white" n1:enterFadeDuration="300" n1:exitFadeDuration="300"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <item n1:state_checked="true" n1:drawable="@drawable/ic_sel_frame" />
+</selector>

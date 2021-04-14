@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="arrowHeadLength" format="dimension" />
+    <attr name="arrowShaftLength" format="dimension" />
+
+    <declare-styleable name="ScaleCardLayout">
+
+        <attr name="aspectRatioHeight" format="integer" />
+        <attr name="aspectRatioWidth" format="integer" />
+
+
+    </declare-styleable>
+
+
+    <declare-styleable name="ProportionalRelativeLayout"></declare-styleable>
+
+
+    <attr name="autoCompleteTextViewStyle" format="reference" />
+    <attr name="autoSizeMaxTextSize" format="dimension" />
+    <attr name="autoSizeMinTextSize" format="dimension" />
+    <attr name="autoSizePresetSizes" format="reference" />
+    <attr name="autoSizeStepGranularity" format="dimension" />
+    `
+
+
+    <declare-styleable name="CircularFillableLoaders">
+
+        <attr name="cfl_border" format="boolean" />
+        <attr name="cfl_border_width" format="dimension" />
+        <attr name="cfl_progress" format="integer" />
+        <attr name="cfl_wave_amplitude" format="float" />
+        <attr name="cfl_wave_color" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="FreshDownloadView">
+        <attr name="circular_color" format="color" />
+        <attr name="circular_progress_color" format="color" />
+        <attr name="circular_radius" format="dimension" />
+        <attr name="circular_width" format="dimension" />
+        <attr name="progress_text_size" format="dimension" />
+
+    </declare-styleable>
+
+
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ExpandIconView">
+
+
+        <attr name="eiv_animationDuration" format="integer" />
+        <attr name="eiv_color" format="color" />
+        <attr name="eiv_colorIntermediate" format="color" />
+        <attr name="eiv_colorLess" format="color" />
+        <attr name="eiv_colorMore" format="color" />
+        <attr name="eiv_padding" format="dimension" />
+        <attr name="eiv_roundedCorners" format="boolean" />
+        <attr name="eiv_switchColor" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="VerticalSlidingPanel">
+        <attr name="panelHeight" format="dimension" />
+        <attr name="shadowHeight" format="dimension" />
+        <attr name="parallaxOffset" format="dimension" />
+        <attr name="fadeColor" format="color" />
+        <attr name="flingVelocity" format="integer" />
+        <attr name="dragView" format="reference" />
+        <attr name="overlay" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="RangeBar">
+
+
+        <attr name="tickCount" format="integer" />
+        <attr name="tickHeight" format="dimension" />
+        <attr name="tickMark" format="reference" />
+        <attr name="tickMarkTint" format="color" />
+    </declare-styleable>
+</resources>

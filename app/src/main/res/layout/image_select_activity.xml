@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    n1:orientation="vertical"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    >
+
+    <RelativeLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_above="@+id/adView"
+        n1:fitsSystemWindows="true">
+
+        <androidx.appcompat.widget.Toolbar xmlns:n2="http://schemas.android.com/apk/res-auto"
+            n1:id="@+id/toolbar"
+            n1:layout_width="fill_parent"
+            n1:layout_height="45.0dip"
+            n1:background="@drawable/maingadient"
+            n1:minHeight="?actionBarSize"
+            n1:paddingRight="10.0dip"
+            n2:navigationIcon="@drawable/ic_left"
+            n2:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            n2:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <TextView
+                n1:id="@+id/toolbar_title"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_gravity="left"
+                n1:text="@string/select_photos"
+                n1:textColor="@color/header_font_color"
+                n1:textSize="@dimen/header_font_size" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <FrameLayout
+            n1:id="@+id/container"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:layout_below="@+id/toolbar"
+            n1:gravity="center_horizontal"
+            n1:orientation="vertical">
+
+            <include
+                n1:id="@+id/overview_panel"
+                layout="@layout/overview_panel" />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        n1:id="@+id/adView"
+        n1:layout_width="match_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_centerHorizontal="true"
+        n1:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/admob_banner"
+        >
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

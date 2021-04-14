@@ -1,0 +1,104 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="AppTheme_5" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:ignore="NewApi">false</item>
+    </style>
+
+
+    <style name="AppTheme1" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionBarSize">40.0dip</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+    <style name="MyPopupMenu" parent="@style/Widget.AppCompat.Light.PopupMenu">
+        <item name="android:popupBackground">@android:color/white</item>
+    </style>
+    <style name="Theme_Launcher" parent="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:windowBackground">@color/main_color</item>
+        <item name="android:textColorHighlight">@color/m_highlight_blue</item>
+        <item name="android:itemBackground">@drawable/bg_card_primary_dark</item>
+        <item name="android:actionBarStyle">@style/Theme.MovieMaker.ActionBar</item>
+        <item name="android:popupMenuStyle">@style/MyPopupMenu</item>
+        <item name="android:textAppearanceLargePopupMenu">@style/myPopupMenuTextAppearanceLarge</item>
+        <item name="android:textAppearanceSmallPopupMenu">@style/myPopupMenuTextAppearanceSmall</item>
+        <item name="actionMenuTextAppearance">@style/Theme.MovieMaker.ActionBar.MenuTextStyle</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorButtonNormal">@color/amber_300</item>
+        <item name="colorControlActivated">@color/amber_400</item>
+        <item name="colorControlNormal">@color/amber_300</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="popupMenuStyle">@style/MyPopupMenu</item>
+        <item name="textAppearanceLargePopupMenu">@style/myPopupMenuTextAppearanceLarge</item>
+        <item name="textAppearanceSmallPopupMenu">@style/myPopupMenuTextAppearanceSmall</item>
+    </style>
+    <style name="myPopupMenuTextAppearanceLarge" parent="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large">
+        <item name="android:textColor">@color/m_gray_medium</item>
+    </style>
+    <style name="myPopupMenuTextAppearanceSmall" parent="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small">
+    <item name="android:textColor">@color/m_gray_medium</item>
+    </style>
+    <style name="Theme.MovieMaker.ActionBar" parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="android:titleTextStyle">@style/Theme.MovieMaker.ActionBar.TitleText</item>
+    </style>
+    <style name="Theme.MovieMaker.ActionBar.MenuTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-heavy</item>
+    </style>
+    <style name="Theme.MovieMaker.ActionBar.TitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="Theme.MovieMaker.ActionBar.TitleText.Dark" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="Theme.MovieMaker.ActionBar.TitleText.Light" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="Theme.MovieMaker.AlertDialog" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColorPrimary">@color/m_gray_medium</item>
+        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+        <item name="colorAccent">@color/amber_500</item>
+        <item name="colorPrimary">@color/amber_500</item>
+        <item name="colorPrimaryDark">@color/amber_500</item>
+    </style>
+    <style name="PauseDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/anim_scale_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_scale_out</item>
+    </style>
+
+
+    <style name="AppTheme.AdAttribution">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:text">@string/ad_attribution</item>
+        <item name="android:background">#FFCC66</item>
+        <item name="android:width">15dp</item>
+        <item name="android:height">15dp</item>
+    </style>
+
+</resources>

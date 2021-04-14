@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:n1="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    n1:id="@+id/main_content"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    n1:fitsSystemWindows="true">
+
+    <include layout="@layout/layout_preview" />
+
+    <LinearLayout xmlns:n2="http://schemas.android.com/apk/res-auto"
+        n1:id="@+id/bottom_sheet"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:background="@color/purvis_grey"
+        n1:orientation="vertical"
+        n2:behavior_hideable="true"
+        n2:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <TextView
+            n1:layout_width="fill_parent"
+            n1:layout_height="?listPreferredItemHeightSmall"
+            n1:layout_marginLeft="@dimen/abc_dialog_padding_material"
+            n1:gravity="center_vertical"
+            n1:text="@string/select_duration"
+            n1:textAppearance="?android:textAppearanceMedium"
+            n1:textColor="?colorPrimary"
+            n1:textSize="14.0sp"
+            n1:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            n1:id="@+id/rvDuration"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent" />
+
+        <com.google.android.gms.ads.AdView
+            n1:id="@+id/adView"
+            n1:layout_width="match_parent"
+            n1:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/admob_banner">
+        </com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

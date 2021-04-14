@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="fill_parent"
+    n1:layout_height="wrap_content"
+    n1:layout_gravity="center"
+    n1:gravity="center"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    n1:orientation="vertical">
+
+    <androidx.cardview.widget.CardView xmlns:n2="http://schemas.android.com/apk/res-auto"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_margin="10.0dip"
+        n2:cardCornerRadius="10.0dip"
+        n2:cardElevation="10.0dip">
+
+        <LinearLayout
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:background="@color/white"
+            n1:orientation="vertical">
+
+            <ImageView
+                n1:id="@+id/img"
+                n1:layout_width="fill_parent"
+                n1:layout_height="50.0dip"
+                n1:layout_gravity="center"
+                n1:src="@drawable/fstar"
+                n1:visibility="gone" />
+
+            <View
+                n1:layout_width="fill_parent"
+                n1:layout_height="2.0dip"
+                n1:background="@color/colorPrimary" />
+
+            <TextView
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:layout_marginLeft="10.0dip"
+                n1:layout_marginTop="20.0dip"
+                n1:text="@string/rate_this_app"
+                n1:textColor="@color/black"
+                n1:textSize="20.0sp"
+                n1:textStyle="bold" />
+
+            <TextView
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:layout_marginLeft="10.0dip"
+                n1:layout_marginRight="10.0dip"
+                n1:layout_marginTop="10.0dip"
+                n1:text="@string/if_you_like_this_app_than_don_t_forget_to_rate_this_app_it_won_t_take_more_than_minutes"
+                n1:textColor="@color/black"
+                n1:textSize="15.0sp" />
+
+            <TextView
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:layout_marginLeft="10.0dip"
+                n1:text="@string/thanks_for_your_support"
+                n1:textColor="@color/black"
+                n1:textSize="15.0sp" />
+
+            <LinearLayout
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:layout_gravity="center"
+                n1:layout_marginTop="@dimen/value_10"
+                n1:gravity="center"
+                n1:orientation="horizontal"
+                n1:weightSum="1.0">
+
+                <TextView
+                    n1:id="@+id/rate"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_gravity="center"
+                    n1:layout_marginLeft="@dimen/value_10"
+                    n1:layout_marginRight="@dimen/value_10"
+                    n1:layout_weight="0.5"
+                    n1:background="@drawable/boarder"
+                    n1:gravity="center"
+                    n1:padding="10.0dip"
+                    n1:text="@string/rate_it_now"
+                    n1:textColor="@color/white" />
+
+                <TextView
+                    n1:id="@+id/nothanks"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_gravity="center"
+                    n1:layout_marginLeft="@dimen/value_10"
+                    n1:layout_marginRight="@dimen/value_10"
+                    n1:layout_weight="0.5"
+                    n1:background="@drawable/boarder"
+                    n1:gravity="center"
+                    n1:padding="10.0dip"
+                    n1:text="@string/no_thanks"
+                    n1:textColor="@color/white" />
+            </LinearLayout>
+
+            <TextView
+                n1:id="@+id/remindlater"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_gravity="center"
+                n1:layout_marginBottom="@dimen/value_20"
+                n1:layout_marginTop="20.0dip"
+                n1:background="@drawable/boarder"
+                n1:gravity="center"
+                n1:padding="10.0dip"
+                n1:text="@string/remind_me_later"
+                n1:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

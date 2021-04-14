@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    n1:layout_gravity="center"
+    n1:gravity="center"
+    n1:orientation="vertical">
+
+    <LinearLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="?actionBarSize"
+        n1:layout_gravity="center"
+        n1:background="@drawable/maingadient"
+        n1:gravity="center"
+        n1:orientation="horizontal"
+        n1:weightSum="1.0">
+
+        <ImageView
+            n1:id="@+id/ivBack"
+            n1:layout_width="?actionBarSize"
+            n1:layout_height="?actionBarSize"
+            n1:layout_gravity="center"
+            n1:padding="10.0dip"
+            n1:src="@drawable/ic_left" />
+
+        <TextView
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:layout_gravity="center"
+            n1:layout_weight="1.0"
+            n1:fontFamily="sans-serif-smallcaps"
+            n1:gravity="center|left"
+            n1:text="@string/play_video"
+            n1:textColor="@android:color/white"
+            n1:textSize="18.0dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="0dp"
+        n1:layout_weight="1"
+        n1:layout_gravity="center"
+        n1:background="@android:color/black"
+        n1:gravity="center"
+        n1:orientation="vertical">
+
+        <VideoView
+            n1:id="@+id/vvMyCreationVideo"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:layout_gravity="center" />
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        n1:id="@+id/adView"
+        n1:layout_width="match_parent"
+        n1:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/admob_banner">
+    </com.google.android.gms.ads.AdView>
+
+</LinearLayout>

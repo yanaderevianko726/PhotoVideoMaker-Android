@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="small_font_size">14.0sp</dimen>
+    <dimen name="spacing">6.0dip</dimen>
+    <dimen name="splash_screen_btn_start_font_size">12.0sp</dimen>
+    <dimen name="text_10">10.0dip</dimen>
+    <dimen name="text_12">12.0dip</dimen>
+    <dimen name="text_13">13.0dip</dimen>
+    <dimen name="text_15">15.0dip</dimen>
+    <dimen name="text_2">2.0dip</dimen>
+    <dimen name="text_5">5.0dip</dimen>
+    <dimen name="value_1">1.0dip</dimen>
+    <dimen name="value_10">10.0dip</dimen>
+    <dimen name="value_12">12.0dip</dimen>
+    <dimen name="value_17">17.0dip</dimen>
+    <dimen name="value_2">2.0dip</dimen>
+    <dimen name="value_20">20.0dip</dimen>
+    <dimen name="value_3">3.0dip</dimen>
+    <dimen name="value_4">4.0dip</dimen>
+    <dimen name="value_40">40.0dip</dimen>
+    <dimen name="header_font_size">16.0sp</dimen>
+    <dimen name="edge">10.0dip</dimen>
+    <dimen name="default_circular_width">3.5dip</dimen>
+    <dimen name="default_radius">80.0dip</dimen>
+    <dimen name="default_text_size">50.0dip</dimen>
+    <dimen name="value_5">5.0dip</dimen>
+    <dimen name="value_6">6.0dip</dimen>
+    <dimen name="value_70">70.0dip</dimen>
+    <dimen name="value_8">8.0dip</dimen>
+    <dimen name="value_80">80.0dip</dimen>
+    <dimen name="value_90">90.0dip</dimen>
+    <dimen name="home_duration_width">40.0dip</dimen>
+    <dimen name="home_list_v_padding">16.0dip</dimen>
+    <dimen name="home_toolbar_height">40.0dip</dimen>
+    <dimen name="internal_padding">12.0dip</dimen>
+    <dimen name="large_font_size">22.0dip</dimen>
+</resources>

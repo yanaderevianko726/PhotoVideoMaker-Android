@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="fill_parent"
+    n1:layout_height="wrap_content"
+    n1:layout_marginBottom="@dimen/home_list_v_padding"
+    n1:background="#ffffff">
+
+    <com.producevideos.crearvideosconfotosymusicaytextoeditor.view.ProportionalRelativeLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="0.0dip"
+        n1:layout_margin="10.0dip"
+        n1:clipChildren="false">
+
+        <androidx.cardview.widget.CardView xmlns:n2="http://schemas.android.com/apk/res-auto"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n2:cardBackgroundColor="@color/transparent"
+            n2:cardCornerRadius="10.0dip"
+            n2:cardElevation="5.0dip">
+
+            <ImageView
+                n1:id="@+id/list_item_video_thumb"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent"
+                n1:background="@drawable/bg_black_gradient_0_100"
+                n1:clickable="false"
+                n1:scaleType="centerCrop" />
+
+            <ImageButton
+                n1:id="@+id/timeline_play"
+                n1:layout_width="@dimen/design_fab_size_mini"
+                n1:layout_height="@dimen/design_fab_size_mini"
+                n1:layout_centerInParent="true"
+                n1:layout_gravity="center"
+                n1:background="@drawable/round_dark_button"
+                n1:clickable="false"
+                n1:scaleType="centerInside"
+                n1:src="@drawable/ic_sb_play_circle" />
+
+            <LinearLayout
+                n1:id="@+id/list_item_video_info_container"
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:layout_gravity="bottom"
+                n1:gravity="bottom|center|left"
+                n1:orientation="vertical"
+                n1:padding="@dimen/internal_padding">
+
+                <TextView
+                    n1:id="@+id/list_item_video_title"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginRight="@dimen/home_toolbar_height"
+                    n1:fontFamily="sans-serif-light"
+                    n1:maxLines="1"
+                    n1:shadowColor="@android:color/black"
+                    n1:shadowDx="1.0"
+                    n1:shadowDy="1.0"
+                    n1:shadowRadius="1.0"
+                    n1:text="@string/really_long_timeline_name_and_then_some"
+                    n1:textColor="@android:color/white"
+                    n1:textSize="@dimen/large_font_size" />
+
+                <LinearLayout
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="wrap_content"
+                    n1:gravity="bottom"
+                    n1:orientation="horizontal">
+
+                    <TextView
+                        n1:id="@+id/list_item_video_duration"
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content"
+                        n1:fontFamily="sans-serif-light"
+                        n1:gravity="left"
+                        n1:maxLines="1"
+                        n1:shadowColor="@android:color/black"
+                        n1:shadowDx="1.0"
+                        n1:shadowDy="1.0"
+                        n1:shadowRadius="1.0"
+                        n1:text="00:00"
+                        n1:textColor="@android:color/white"
+                        n1:textSize="@dimen/small_font_size"
+                        n1:visibility="gone" />
+
+                    <TextView
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content"
+                        n1:fontFamily="sans-serif-light"
+                        n1:gravity="left"
+                        n1:maxLines="1"
+                        n1:shadowColor="@android:color/black"
+                        n1:shadowDx="1.0"
+                        n1:shadowDy="1.0"
+                        n1:shadowRadius="1.0"
+                        n1:text="|"
+                        n1:textColor="@android:color/white"
+                        n1:textSize="@dimen/small_font_size"
+                        n1:visibility="gone" />
+
+                    <TextView
+                        n1:id="@+id/list_item_video_date"
+                        n1:layout_width="wrap_content"
+                        n1:layout_height="wrap_content"
+                        n1:layout_marginLeft="6.0dip"
+                        n1:ellipsize="end"
+                        n1:fontFamily="sans-serif-light"
+                        n1:maxLines="1"
+                        n1:shadowColor="@android:color/black"
+                        n1:shadowDx="1.0"
+                        n1:shadowDy="1.0"
+                        n1:shadowRadius="1.0"
+                        n1:text="January 01, 1970"
+                        n1:textColor="@android:color/white"
+                        n1:textSize="@dimen/small_font_size"
+                        n1:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                n1:id="@+id/list_item_video_toolbar"
+                n1:layout_width="@dimen/home_toolbar_height"
+                n1:layout_height="?actionBarSize"
+                n1:layout_gravity="end|bottom|center"
+                n1:background="@color/transparent"
+                n1:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                n2:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        </androidx.cardview.widget.CardView>
+    </com.producevideos.crearvideosconfotosymusicaytextoeditor.view.ProportionalRelativeLayout>
+</RelativeLayout>

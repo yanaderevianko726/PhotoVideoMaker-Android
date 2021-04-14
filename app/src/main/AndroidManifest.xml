@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.producevideos.crearvideosconfotosymusicaytextoeditor">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".activity.SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id"/>
+
+        <activity
+            android:name=".activity.StartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ProgressActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme_Launcher" />
+        <activity
+            android:name=".activity.ImageSelectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PreviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SongEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ImageEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyCreationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PlayVideoFromMyCreationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_5"/>
+        <activity
+            android:name=".activity.WebActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.producevideos.crearvideosconfotosymusicaytextoeditor.service.ImageCreatorService" />
+        <service android:name="com.producevideos.crearvideosconfotosymusicaytextoeditor.service.CreateVideoService" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.androworld.photoeditor.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/files"/>
+        </provider>
+    </application>
+
+</manifest>

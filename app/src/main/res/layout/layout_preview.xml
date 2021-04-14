@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    n1:fitsSystemWindows="true">
+
+    <androidx.appcompat.widget.Toolbar xmlns:n2="http://schemas.android.com/apk/res-auto"
+        n1:id="@+id/toolbar"
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:background="@drawable/maingadient"
+        n1:minHeight="?actionBarSize"
+        n1:paddingRight="10.0dip"
+        n2:navigationIcon="@drawable/ic_left"
+        n2:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        n2:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            n1:id="@+id/toolbar_title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_gravity="left"
+            n1:text="@string/preview"
+            n1:textColor="@color/header_font_color"
+            n1:textSize="@dimen/header_font_size" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.producevideos.crearvideosconfotosymusicaytextoeditor.view.ScaleCardLayout xmlns:n3="http://schemas.android.com/apk/res-auto"
+        n1:id="@+id/scaleCard"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_below="@+id/toolbar"
+        n1:layout_marginBottom="6.0dip"
+        n1:layout_marginLeft="4.0dip"
+        n1:layout_marginRight="4.0dip"
+        n1:layout_marginTop="4.0dip"
+        n1:orientation="vertical"
+        n3:cardCornerRadius="4.0dip"
+        n3:cardElevation="6.0dip">
+
+        <com.producevideos.crearvideosconfotosymusicaytextoeditor.view.PreviewImageView
+            n1:id="@+id/previewImageView1"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:src="@color/pink" />
+
+        <ImageView
+            n1:id="@+id/ivFrame"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:layout_alignBottom="@+id/previewImageView1"
+            n1:layout_alignTop="@+id/previewImageView1" />
+
+        <ImageView
+            n1:id="@+id/ivPlayPause"
+            n1:layout_width="80.0dip"
+            n1:layout_height="fill_parent"
+            n1:layout_alignBottom="@+id/previewImageView1"
+            n1:layout_alignTop="@+id/previewImageView1"
+            n1:layout_centerInParent="true"
+            n1:layout_gravity="center_horizontal"
+            n1:src="@drawable/ic_sb_play_circle" />
+
+        <View
+            n1:id="@+id/video_clicker"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:background="@drawable/bg_card_transparent"
+            n1:clickable="true"
+            n1:focusable="true" />
+
+        <LinearLayout
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:layout_alignBottom="@+id/scaleCard"
+            n1:layout_gravity="bottom"
+            n1:layout_marginBottom="8.0dip"
+            n1:orientation="horizontal"
+            n1:visibility="visible">
+
+            <TextView
+                n1:id="@+id/tvTime"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_gravity="center_vertical"
+                n1:paddingLeft="12.0dip"
+                n1:paddingRight="4.0dip"
+                n1:text="@string/duration"
+                n1:textColor="?colorControlActivated" />
+
+            <SeekBar
+                n1:id="@+id/sbPlayTime"
+                n1:layout_width="0.0dip"
+                n1:layout_height="wrap_content"
+                n1:layout_gravity="center_vertical"
+                n1:layout_weight="1.0"
+                n1:padding="10.0dip" />
+
+            <TextView
+                n1:id="@+id/tvEndTime"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_gravity="center_vertical"
+                n1:paddingLeft="4.0dip"
+                n1:paddingRight="12.0dip"
+                n1:text="@string/duration"
+                n1:textColor="?colorControlActivated" />
+        </LinearLayout>
+
+        <LinearLayout
+            n1:id="@+id/flLoader"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:layout_alignBottom="@+id/previewImageView1"
+            n1:layout_alignTop="@+id/previewImageView1"
+            n1:layout_gravity="center"
+            n1:background="#88000000"
+            n1:gravity="center"
+            n1:orientation="vertical">
+
+            <ProgressBar
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content" />
+
+            <TextView
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_gravity="center"
+                n1:text="@string/applying_theme"
+                n1:textColor="?colorPrimary" />
+        </LinearLayout>
+    </com.producevideos.crearvideosconfotosymusicaytextoeditor.view.ScaleCardLayout>
+
+    <LinearLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_below="@+id/scaleCard"
+        n1:orientation="vertical">
+
+        <androidx.cardview.widget.CardView xmlns:n4="http://schemas.android.com/apk/res-auto"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:layout_margin="4.0dip"
+            n1:layout_marginBottom="2.0dip"
+            n1:layout_marginLeft="4.0dip"
+            n1:layout_marginRight="4.0dip"
+            n1:layout_marginTop="4.0dip"
+            n4:cardCornerRadius="4.0dip"
+            n4:cardElevation="4.0dip"
+            n4:contentPadding="2.0dip">
+
+            <LinearLayout
+                n1:id="@+id/lleditArea"
+                n1:layout_width="fill_parent"
+                n1:layout_height="60.0dip"
+                n1:background="@color/colorPrimary"
+                n1:gravity="center_vertical"
+                n1:orientation="horizontal">
+
+                <LinearLayout
+                    n1:id="@+id/llEdit"
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="60.0dip"
+                    n1:layout_margin="4.0dip"
+                    n1:gravity="center_vertical"
+                    n1:orientation="horizontal">
+
+                    <ImageView
+                        n1:id="@+id/ibAddImages"
+                        n1:layout_width="fill_parent"
+                        n1:layout_height="fill_parent"
+                        n1:layout_weight="1.0"
+                        n1:background="@android:color/transparent"
+                        n1:padding="5.0dip"
+                        n1:src="@drawable/add" />
+
+                    <ImageView
+                        n1:id="@+id/ibEditMode"
+                        n1:layout_width="fill_parent"
+                        n1:layout_height="fill_parent"
+                        n1:layout_weight="1.0"
+                        n1:background="@android:color/transparent"
+                        n1:padding="5.0dip"
+                        n1:src="@drawable/edit" />
+
+                    <ImageView
+                        n1:id="@+id/ibAddMusic"
+                        n1:layout_width="fill_parent"
+                        n1:layout_height="fill_parent"
+                        n1:layout_weight="1.0"
+                        n1:background="@android:color/transparent"
+                        n1:padding="5.0dip"
+                        n1:src="@drawable/music" />
+
+                    <ImageView
+                        n1:id="@+id/ibAddDuration"
+                        n1:layout_width="fill_parent"
+                        n1:layout_height="fill_parent"
+                        n1:layout_weight="1.0"
+                        n1:background="@android:color/transparent"
+                        n1:padding="5.0dip"
+                        n1:src="@drawable/time" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView xmlns:n5="http://schemas.android.com/apk/res-auto"
+            n1:layout_width="fill_parent"
+            n1:layout_height="0.0dip"
+            n1:layout_marginBottom="2.0dip"
+            n1:layout_marginLeft="4.0dip"
+            n1:layout_marginRight="4.0dip"
+            n1:layout_marginTop="4.0dip"
+            n1:layout_weight="1.0"
+            n5:cardCornerRadius="4.0dip"
+            n5:cardElevation="4.0dip"
+            n5:contentPadding="2.0dip">
+
+            <androidx.recyclerview.widget.RecyclerView
+                n1:id="@+id/rvThemes"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent"
+                n1:layout_weight="1.0" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView xmlns:n6="http://schemas.android.com/apk/res-auto"
+            n1:layout_width="fill_parent"
+            n1:layout_height="0.0dip"
+            n1:layout_marginBottom="4.0dip"
+            n1:layout_marginLeft="4.0dip"
+            n1:layout_marginRight="4.0dip"
+            n1:layout_marginTop="2.0dip"
+            n1:layout_weight="1.0"
+            n6:cardCornerRadius="4.0dip"
+            n6:cardElevation="4.0dip"
+            n6:contentPadding="2.0dip">
+
+            <androidx.recyclerview.widget.RecyclerView
+                n1:id="@+id/rvFrame"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent"
+                n1:layout_weight="1.0" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <ImageView
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_below="@+id/toolbar"
+        n1:background="@drawable/stack_drop_shadow"
+        n1:minHeight="6.0dip" />
+</RelativeLayout>

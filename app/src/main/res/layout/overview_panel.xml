@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.producevideos.crearvideosconfotosymusicaytextoeditor.view.VerticalSlidingPanel xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:id="@+id/sliding_layouts"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    n1:gravity="bottom">
+
+    <LinearLayout
+        n1:id="@+id/default_home_screen_panel"
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_gravity="center_horizontal"
+        n1:baselineAligned="false"
+        n1:orientation="vertical">
+
+        <androidx.cardview.widget.CardView xmlns:n2="http://schemas.android.com/apk/res-auto"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:layout_weight="3.0"
+            n2:cardElevation="4.0dip">
+
+            <androidx.recyclerview.widget.RecyclerView
+                n1:id="@+id/rvAlbum"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent" />
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:layout_weight="1.0">
+
+            <androidx.recyclerview.widget.RecyclerView
+                n1:id="@+id/rvImageAlbum"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent" />
+
+            <View
+                n1:layout_width="6.0dip"
+                n1:layout_height="fill_parent"
+                n1:background="@drawable/stack_drop_shadow_left" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:orientation="vertical">
+
+        <RelativeLayout
+            n1:id="@+id/settings_container"
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent"
+            n1:layout_gravity="bottom|center"
+            n1:orientation="vertical">
+
+            <RelativeLayout
+                n1:id="@+id/settings_pane_header"
+                n1:layout_width="fill_parent"
+                n1:layout_height="40.0dip"
+                n1:background="?colorPrimary"
+                n1:orientation="vertical">
+
+                <Button
+                    n1:id="@+id/btnClear"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="40.0dip"
+                    n1:layout_alignParentLeft="true"
+                    n1:layout_centerVertical="true"
+                    n1:background="@drawable/bg_card_transparent"
+                    n1:text="clear"
+                    n1:textColor="@android:color/white"
+                    n1:visibility="gone" />
+
+                <com.producevideos.crearvideosconfotosymusicaytextoeditor.view.ExpandIconView
+                    n1:id="@+id/settings_drag_arrow"
+                    n1:layout_width="40.0dip"
+                    n1:layout_height="30.0dip"
+                    n1:layout_centerInParent="true"
+                    n1:layout_gravity="center_horizontal"
+                    n1:adjustViewBounds="true" />
+
+                <TextView
+                    n1:id="@+id/tvImageCount"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_alignParentRight="true"
+                    n1:layout_centerVertical="true"
+                    n1:layout_marginRight="12.0dip"
+                    n1:text="(1)"
+                    n1:textColor="@android:color/white" />
+            </RelativeLayout>
+
+            <com.producevideos.crearvideosconfotosymusicaytextoeditor.view.EmptyRecyclerView
+                n1:id="@+id/rvSelectedImagesList"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent"
+                n1:layout_below="@+id/settings_pane_header" />
+
+            <LinearLayout
+                n1:id="@+id/list_empty"
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent"
+                n1:layout_below="@+id/settings_pane_header"
+                n1:gravity="center"
+                n1:orientation="vertical">
+
+                <TextView
+                    n1:layout_width="fill_parent"
+                    n1:layout_height="wrap_content"
+                    n1:drawableTop="@drawable/no_video"
+                    n1:gravity="center_horizontal"
+                    n1:text="@string/images_not_selected_yet"
+                    n1:textColor="#ff999999" />
+            </LinearLayout>
+
+            <ImageView
+                n1:layout_width="fill_parent"
+                n1:layout_height="6.0dip"
+                n1:layout_below="@+id/settings_pane_header"
+                n1:src="@drawable/stack_drop_shadow" />
+        </RelativeLayout>
+    </FrameLayout>
+</com.producevideos.crearvideosconfotosymusicaytextoeditor.view.VerticalSlidingPanel>
