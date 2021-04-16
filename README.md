@@ -4,18 +4,12 @@ Photo Slideshow with Music app helps you to create fast and awesome slideshow wi
 
 ## Screenshot
 
-|                Screenshot               | Screenshot |
-|:---------------------------------------:|:-------------------------------------:|
-| ![screenshot](screens/screen_3.png)   | ![screenshot](screens/screen_4.png)     |
+|                Screenshot               |                 Screenshot            |               Screenshot              |
+|:---------------------------------------:|:-------------------------------------:|:-------------------------------------:|
+| ![screenshot](screens/screen_3.png)   | ![screenshot](screens/screen_4.png)     | ![screenshot](screens/screen_6.png)   |
 
 ## Screenshot
 
-|                Screenshot               | Screenshot |
-|:---------------------------------------:|:-------------------------------------:|
-| ![screenshot](screens/screen_6.png)   | ![screenshot](screens/screen_5.png)     |
-
-## Screenshot
-
-|                Screenshot               | Screenshot |
-|:---------------------------------------:|:-------------------------------------:|
-| ![screenshot](screens/screen_1.png)   | ![screenshot](screens/screen_2.png)     |
+|                Screenshot               |                 Screenshot            |               Screenshot              |
+|:---------------------------------------:|:-------------------------------------:|:-------------------------------------:|
+| ![screenshot](screens/screen_5.png)   | ![screenshot](screens/screen_1.png)     | ![screenshot](screens/screen_2.png)   |
